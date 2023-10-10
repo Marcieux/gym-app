@@ -16,7 +16,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
         register, 
         trigger,
         formState: { errors }
-    } = useForm();
+    } = useForm<any>();
 
     const onSubmit = async(e: any) => {
         const isValid = await trigger();
